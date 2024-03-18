@@ -10,7 +10,7 @@ html{
 :root{
   --primary: #000;
   --secondary: #18181B;
-  --borderColor: rgba(63,63,70,.04);
+  --borderColor: #3f3f460a;
   --title: #F4F4F5;
   --subtitle: #A1A1AA;
   --custom-blue: #5DBCFC;
