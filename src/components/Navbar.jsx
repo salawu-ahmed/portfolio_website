@@ -1,22 +1,23 @@
 import React, { useState } from 'react'
-import { CgMenuRound } from "react-icons/cg";
-import { MdOutlineClose } from "react-icons/md";
+// import { CgMenuRound } from "react-icons/cg";
+import { MdMenu, MdOutlineClose } from "react-icons/md";
+import { FiMoon } from "react-icons/fi";
 
 const Navbar = () => {
   const [showModal, setShowModal] = useState(false)
   return (
     <header className='flex items-center justify-between px-6 mt-4'>
-      <div className='md:hidden'>
-        <CgMenuRound size={30} onClick={() => setShowModal(true)} />
+      <div className='md:hidden p-1 border border-transparent bg-headerBg rounded-full hover:border hover:border-salmon group'>
+        <MdMenu size={25} onClick={() => setShowModal(true)} className='fill-subtitle group-hover:fill-title' />
       </div>
       {
         showModal &&
         <>
           {/* overlay */}
-          <div className="md:hidden bg-black/90 fixed left-0 bottom-0 top-0 right-0">
+          <div className="md:hidden bg-black/90 fixed left-0 bottom-0 top-0 right-0 ">
             {/* mobile menu */}
-            <ul className='flex flex-col w-[85%] mx-auto mt-8 rounded-2xl bg-secondary py-4 px-8 gap-4'>
-              <li className='flex justify-end items-center'><MdOutlineClose size={30} onClick={() => setShowModal(false)}/></li>
+            <ul className='flex flex-col w-[85%] scale-1 mx-auto mt-5 rounded-2xl bg-secondary py-4 px-8 gap-4 animate-modalMenu'>
+              <li className='flex justify-end items-center'><MdOutlineClose size={30} onClick={() => setShowModal(false)} className='hover:animate-spin-fast active:fill-red-500 hover:fill-red-500 fill-subtitle'/></li>
               <li className='border-b border-borderColor pt-2 pb-3'><a href="/" className='text-title/90 hover:text-custom-blue text-lg font-medium hover:text-[16px] transition-all'>About</a></li>
               <li className='border-b border-borderColor pt-2 pb-3'><a href="" className='text-title/90 hover:text-custom-blue text-lg font-medium hover:text-[16px] transition-all'>Articles</a></li>
               <li className='border-b border-borderColor pt-2 pb-3'><a href="" className='text-title/90 hover:text-custom-blue text-lg font-medium hover:text-[16px] transition-all'>Projects</a></li>
@@ -36,7 +37,7 @@ const Navbar = () => {
           <li><a href="" className='text-title/90 hover:text-custom-blue text-sm font-medium hover:text-[16px] hover:transition-all hover:duration-200'>Contact</a></li>
         </ul>
       </nav>
-      <button className='h-25 text-2xl'>Light</button>
+      <button className='h-25 text-2xl p-1 border border-transparent bg-headerBg rounded-full hover:border hover:border-salmon group focus:scale-0.8'><FiMoon size={25} className='fill-headerBg text-subtitle group-hover:text-title ' /></button>
     </header>
   )
 }

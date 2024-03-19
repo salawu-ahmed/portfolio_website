@@ -14,6 +14,8 @@ html{
   --title: #F4F4F5;
   --subtitle: #A1A1AA;
   --custom-blue: #5DBCFC;
+  --headerBg: #27272A;
+  --salmon: #F4A560;
 }
 .light_mode{
   --primary: #fff
