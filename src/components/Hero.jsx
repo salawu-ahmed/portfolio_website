@@ -8,7 +8,7 @@ const Hero = () => {
       {/* left-side */}
       <div className='grow'>
         <div className="flex items-end gap-2">
-          <img src="/me 1.png" alt="" className='p-1 w-28 rounded-full border border-orange-400 drop-shadow-[2px_2px_40px_rgba(203, 200, 200, 0.5)_inset] mr-1' />
+          <img src="/me.png" alt="" className='p-1 w-28 rounded-full border border-orange-400 drop-shadow-[2px_2px_40px_rgba(203, 200, 200, 0.5)_inset] mr-1' />
           <span>
             <MdVerified size={25} className='fill-custom-blue mb-2' />
           </span>
