@@ -11,12 +11,12 @@ html{
 
 :root{
   --primary: #000;
-  --secondary: #18181B;
+  --secondary: #18181b;
   --borderColor: #3f3f460a;
   --title: #F4F4F5;
   --subtitle: #A1A1AA;
   --custom-blue: #5DBCFC;
-  --headerBg: #27272A;
+  --headerBg: #27272a;
   --salmon: #F4A560;
 }
 .light_mode{
