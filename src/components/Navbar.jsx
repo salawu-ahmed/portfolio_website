@@ -14,7 +14,7 @@ const Navbar = () => {
         showModal &&
         <>
           {/* overlay */}
-          <div className="md:hidden bg-black/90 fixed left-0 bottom-0 top-0 right-0 ">
+          <div className="md:hidden bg-black/90 fixed left-0 bottom-0 top-0 right-0 backdrop-blur-sm">
             {/* mobile menu */}
             <ul className='flex flex-col w-[85%] scale-1 mx-auto mt-5 rounded-2xl bg-secondary py-4 px-8 gap-4 animate-modalMenu'>
               <li className='flex justify-end items-center'><MdOutlineClose size={30} onClick={() => setShowModal(false)} className='hover:animate-spin-fast active:fill-red-500 hover:fill-red-500 fill-subtitle'/></li>
