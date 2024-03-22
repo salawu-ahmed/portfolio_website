@@ -15,7 +15,7 @@ const App = () => {
       <Projects />
       <div className="border-b my-8 border-[#3f3f4666] -mx-7 lg:-mx-16"/>
       <Contact />
-      <div className="border-b my-8 border-[rgba(63,63,70,0.4)] w-full"/>
+      <div className="border-b my-8 border-[#3f3f4666] -mx-7 lg:-mx-16"/>
       <Footer />
     </div>
   )
