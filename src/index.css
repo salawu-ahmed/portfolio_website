@@ -18,6 +18,7 @@ html{
   --custom-blue: #5DBCFC;
   --headerBg: #27272a;
   --salmon: #F4A560;
+  --card-border: #5DBCFC;
 }
 .light_mode{
   --primary: #fff

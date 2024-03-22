@@ -15,6 +15,7 @@ export default {
         "headerBg": "var(--headerBg)",
         "salmon": "var(--salmon)",
         "custom-blue": "var(--custom-blue)",
+        "card-border": "var(--card-border)",
       },
       animation: {
         'spin-fast': 'spin .5s linear infinite',
