@@ -19,12 +19,12 @@ const Projects = () => {
             <h1>Landing Page 2</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repellendus inventore iure tempore veniam minus fugit.</p>
             <div className="flex">
-              {/* <Link to='/'> */}
+              <Link to='/project-demo'>
                 <FaLink />
-              {/* </Link> */}
-              {/* <Link to='/'> */}
+              </Link>
+              <Link to='/'>
                 <FaGithub />
-              {/* </Link> */}
+              </Link>
             </div>
           </div>
         </article>
