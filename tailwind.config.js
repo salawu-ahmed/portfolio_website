@@ -9,6 +9,7 @@ export default {
       colors: {
         "primary": "var(--primary)",
         "secondary": "var(--secondary)",
+        "randomColor": "var(--randomColor)",
         "borderColor": "var(--borderColor)",
         "title": "var(--title)",
         "subtitle": "var(--subtitle)",

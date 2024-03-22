@@ -12,6 +12,7 @@ html{
 :root{
   --primary: #000;
   --secondary: #18181b;
+  --randomColor: #3f3f46;
   --borderColor: #3f3f460a;
   --title: #F4F4F5;
   --subtitle: #A1A1AA;
@@ -27,3 +28,7 @@ body{
   background-color: var(--primary);
   color: #fff;
 }
+
+/* input, textarea {
+  all: unset;
+} */
