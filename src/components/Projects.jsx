@@ -14,7 +14,7 @@ const Projects = () => {
       </section>
       <section className='flex flex-wrap gap-4 justify-center'>
         {
-          ['a', "aa", "aaa", "aaaa", "aaaaa"].map(item => {
+          ['a', "aa", "aaa", "aaaa", "aaaaa","aaaaaa"].map(item => {
             return (
               <article key={item} className='border border-card-border/30 hover:border-custom-blue transition-all duration-300 w-64  rounded-l hover:rotate-1 hover:cursor-pointer hover:scale-105'>
                 <img src="/1.jpg" alt="" className='rounded-l' />
