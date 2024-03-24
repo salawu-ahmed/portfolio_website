@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Projects = () => {
   return (
-    <main className='flex flex-col gap-12 sm:flex-row items-start'>
+    <main className='flex flex-col gap-8 sm:flex-row items-start'>
       <section className='flex sm:flex-col gap-3 flex-wrap justify-center'>
         <button className='w-32 sm:w-44 py-2 sm:py-3 text-center text-sm sm:text-base bg-[rgba(36,37,46,1)] border border-transparent focus:border-custom-blue opacity-50 focus:opacity-100 focus:font-bold focus:leading-2 hover:opacity-100 transition-all duration-300'>All Projects</button>
         <button className='w-32 sm:w-44 py-2 sm:py-3 text-center text-sm sm:text-base bg-[rgba(36,37,46,1)] border border-transparent focus:border-custom-blue opacity-50 focus:opacity-100 focus:font-bold focus:leading-2 hover:opacity-100 transition-all duration-300'>HTML & CSS</button>
