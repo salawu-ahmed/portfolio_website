@@ -13,18 +13,34 @@ html{
 :root{
   --primary: #000;
   --secondary: #18181b;
-  --randomColor: #3f3f46;
-  --borderColor: #3f3f460a;
-  --title: #F4F4F5;
-  --subtitle: #A1A1AA;
-  --custom-blue: #5DBCFC;
+  --borderColor: #3f3f4666;
+  --title: #f4f4f5;
+  --subtitle: #a1a1aa;
+  --custom-blue: #5dbcfc;
   --headerBg: #27272a;
+
   --salmon: #F4A560;
+  --btnBg: #24252f;
+  --card-border: #5DBCFC;
+  --randomColor: #3f3f46;
+}
+.light{
+  --primary: #fafafa;
+  --secondary: #ffffff;
+  --borderColor: #cacaca84;
+  --title: #27272a;
+  --subtitle: #52525b;
+  --headerBg: #fdfdfd;
+  --custom-blue: rgb(0, 149, 246);
+
+  --salmon: #333;
+
+  /* My own colors */
+  --btnBg: #24252f;
+  --randomColor: #3f3f46;
   --card-border: #5DBCFC;
 }
-.light_mode{
-  --primary: #fff
-}
+.light button {opacity: 1;}
 body{
   background-color: var(--primary);
   color: #fff;

@@ -14,6 +14,7 @@ export default {
         "title": "var(--title)",
         "subtitle": "var(--subtitle)",
         "headerBg": "var(--headerBg)",
+        "btnBg": "var(--btnBg)",
         "salmon": "var(--salmon)",
         "custom-blue": "var(--custom-blue)",
         "card-border": "var(--card-border)",

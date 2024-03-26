@@ -1,9 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaArrowRight, FaGithub, FaLink } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { myProjects } from './data'
 
 const Projects = () => {
+  const [theme, setTheme] = useState(localStorage.getItem("currentTheme") ?? "dark")
+  useEffect(()=>{
+    setTheme(localStorage.getItem("currentTheme"))
+  },[theme])
   const [projects, setProjects] = useState(myProjects)
   const handleFilter = (category) => {
     // filter every project that has the category
@@ -22,7 +26,7 @@ const Projects = () => {
   return (
     <main className='flex flex-col gap-8 sm:flex-row items-start'>
       <section className='flex sm:flex-col gap-3 flex-wrap justify-center'>
-        <button className='w-32 sm:w-44 py-2 sm:py-3 text-center text-sm sm:text-base bg-[rgba(36,37,46,1)] border border-transparent focus:border-custom-blue opacity-50 focus:opacity-100 focus:font-bold focus:leading-2 hover:opacity-100 transition-all duration-300' onClick={() => setProjects(myProjects)}>All Projects</button>
+        <button className="w-32 sm:w-44 py-2 sm:py-3 text-center text-sm sm:text-base bg-btnBg border border-transparent focus:border-custom-blue opacity-50 focus:opacity-100 focus:font-bold focus:leading-2 hover:opacity-100 transition-all duration-300" onClick={() => setProjects(myProjects)}>All Projects</button>
         <button className='w-32 sm:w-44 py-2 sm:py-3 text-center text-sm sm:text-base bg-[rgba(36,37,46,1)] border border-transparent focus:border-custom-blue opacity-50 focus:opacity-100 focus:font-bold focus:leading-2 hover:opacity-100 transition-all duration-300' onClick={() => handleFilter("html&css")}>HTML & CSS</button>
         <button className='w-32 sm:w-44 py-2 sm:py-3 text-center text-sm sm:text-base bg-[rgba(36,37,46,1)] border border-transparent focus:border-custom-blue opacity-50 focus:opacity-100 focus:font-bold focus:leading-2 hover:opacity-100 transition-all duration-300' onClick={() => handleFilter("javascript")}>JavaScript</button>
         <button className='w-32 sm:w-44 py-2 sm:py-3 text-center text-sm sm:text-base bg-[rgba(36,37,46,1)] border border-transparent focus:border-custom-blue opacity-50 focus:opacity-100 focus:font-bold focus:leading-2 hover:opacity-100 transition-all duration-300' onClick={() => handleFilter("react+tailwind")}>React & Tailwind CSS</button>

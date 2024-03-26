@@ -1,5 +1,7 @@
 import React from 'react'
 import { FaEnvelope } from 'react-icons/fa'
+import Lottie from 'lottie-react'
+import contactAnimation from '../../public/animation/Animation - 1711496797677.json'
 
 const Contact = () => {
   return (
@@ -27,7 +29,9 @@ const Contact = () => {
 
           <button type="submit" className='w-2/5 sm:w-64 py-3 px-8 text-base bg-[rgba(36,37,46,1)] mt-7 rounded-md border border-randomColor hover:scale-95 self-center sm:self-start'>Submit</button>
         </form>
-      <div className='hidden sm:block'>animation</div>
+      <div className='hidden sm:block'>
+        <Lottie animationData={contactAnimation}/>
+      </div>
       </div>
     </section>
   )

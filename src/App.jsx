@@ -18,7 +18,7 @@ const App = () => {
     })
   }, [])
   return (
-    <div className='px-7 w-[98%] md:w-[90%] border border-[rgba(63,63,70,0.4)] mx-auto lg:w-[85%] lg:px-16 bg-[rgb(24,24,27)]' id='up'>
+    <div className='px-7 w-[98%] md:w-[90%] border border-[rgba(63,63,70,0.4)] mx-auto lg:w-[85%] lg:px-16 bg-secondary' id='up'>
       <Navbar />
       <Hero />
       <div className="border-b my-8 border-[#3f3f4666] -mx-7 lg:-mx-16" />
