@@ -28,11 +28,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className=''>
+      <div className='hidden md:block'>
         <Lottie animationData={devAnimation} style={{height: 500}} lottieRef={lottieRef} onLoadedImages={() => {
           lottieRef.current.setSpeed(0.5)
         }
-        } className='border border-red-500 w-full -translateX-4'/>
+        } className='w-full translate-x-20'/>
       </div>
     </section>
   )
