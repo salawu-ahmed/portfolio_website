@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { MdVerified } from 'react-icons/md'
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import Lottie from 'lottie-react'
+import devAnimation from '../../public/animation/Animation - 1711582799600.json'
 
 const Hero = () => {
+  const lottieRef = useRef()
   return (
     <section className='mt-12 flex'>
       {/* left-side */}
@@ -25,7 +28,12 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className=''>animation</div>
+      <div className=''>
+        <Lottie animationData={devAnimation} style={{height: 500}} lottieRef={lottieRef} onLoadedImages={() => {
+          lottieRef.current.setSpeed(0.5)
+        }
+        } className='border border-red-500 w-full -translateX-4'/>
+      </div>
     </section>
   )
 }
