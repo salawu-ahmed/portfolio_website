@@ -37,7 +37,7 @@ const Projects = () => {
           {
             projects.map(item => {
               return (
-                <motion.article layout initial={{transform: "scale(0"}} animate={{transform: "scale(1"}} transition={{type: "spring", damping: 8, stiffness: 500}} key={item.id} className='border border-card-border/30 hover:border-custom-blue transition-all duration-300 w-64  rounded-l hover:rotate-1 hover:cursor-pointer hover:scale-105'>
+                <motion.article layout initial={{transform: "scale(0"}} animate={{transform: "scale(1"}} transition={{type: "spring", damping: 8, stiffness: 50}} key={item.id} className='border border-card-border/30 hover:border-custom-blue transition-all duration-300 w-64  rounded-l hover:rotate-1 hover:cursor-pointer hover:scale-105'>
                   <img src="/1.jpg" alt="" className='rounded-l' />
                   <div className='py-4 px-2'>
                     <h1 className='text-title'>{item.projectTitle}</h1>

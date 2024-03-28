@@ -47,6 +47,6 @@ export const myProjects = [
       projectDemo: "https://college-website-tuts.netlify.app",
       githubRepo: "",
       projectShowcase: "",
-      category:  ["html&css","javascript"],
+      category:  ["javascript"],
     },
   ]
