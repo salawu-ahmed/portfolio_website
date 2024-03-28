@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react'
 import { FaArrowRight, FaGithub, FaLink } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { myProjects } from './data'
+import { AnimatePresence, motion } from 'framer-motion'
 
 const Projects = () => {
   const [theme, setTheme] = useState(localStorage.getItem("currentTheme") ?? "dark")
-  useEffect(()=>{
+  useEffect(() => {
     setTheme(localStorage.getItem("currentTheme"))
-  },[theme])
+  }, [theme])
   const [projects, setProjects] = useState(myProjects)
   const handleFilter = (category) => {
     // filter every project that has the category
@@ -32,33 +33,35 @@ const Projects = () => {
         <button className='w-32 sm:w-44 py-2 sm:py-3 text-center text-sm sm:text-base bg-[rgba(36,37,46,1)] border border-transparent focus:border-custom-blue opacity-50 focus:opacity-100 focus:font-bold focus:leading-2 hover:opacity-100 transition-all duration-300' onClick={() => handleFilter("react+tailwind")}>React & Tailwind CSS</button>
       </section>
       <section className='flex flex-grow flex-wrap gap-4 justify-center'>
-        {
-          projects.map(item => {
-            return (
-              <article key={item.id} className='border border-card-border/30 hover:border-custom-blue transition-all duration-300 w-64  rounded-l hover:rotate-1 hover:cursor-pointer hover:scale-105'>
-                <img src="/1.jpg" alt="" className='rounded-l' />
-                <div className='py-4 px-2'>
-                  <h1 className='text-title'>{item.projectTitle}</h1>
-                  <p className='text-subtitle text-xs my-3'>{item.projectDescription}</p>
-                  <div className="flex justify-between">
-                    <div className="flex gap-2">
-                      <a href={item.projectDemo} target='_blank'>
-                        <FaLink size={20} className='hover:scale-125 text-subtitle hover:text-title' />
-                      </a>
-                      <a href={item.projectDemo}>
-                        <FaGithub size={20} className='hover:scale-125 text-subtitle hover:text-title' />
-                      </a>
+        <AnimatePresence>
+          {
+            projects.map(item => {
+              return (
+                <motion.article layout initial={{transform: "scale(0"}} animate={{transform: "scale(1"}} transition={{type: "spring", damping: 8, stiffness: 500}} key={item.id} className='border border-card-border/30 hover:border-custom-blue transition-all duration-300 w-64  rounded-l hover:rotate-1 hover:cursor-pointer hover:scale-105'>
+                  <img src="/1.jpg" alt="" className='rounded-l' />
+                  <div className='py-4 px-2'>
+                    <h1 className='text-title'>{item.projectTitle}</h1>
+                    <p className='text-subtitle text-xs my-3'>{item.projectDescription}</p>
+                    <div className="flex justify-between">
+                      <div className="flex gap-2">
+                        <a href={item.projectDemo} target='_blank'>
+                          <FaLink size={20} className='hover:scale-125 text-subtitle hover:text-title' />
+                        </a>
+                        <a href={item.projectDemo}>
+                          <FaGithub size={20} className='hover:scale-125 text-subtitle hover:text-title' />
+                        </a>
+                      </div>
+                      <Link to="/" className='flex items-center gap-2 text-custom-blue'>
+                        more
+                        <FaArrowRight />
+                      </Link>
                     </div>
-                    <Link to="/" className='flex items-center gap-2 text-custom-blue'>
-                      more
-                      <FaArrowRight />
-                    </Link>
                   </div>
-                </div>
-              </article>
-            )
-          })
-        }
+                </motion.article>
+              )
+            })
+          }
+        </AnimatePresence>
 
       </section>
     </main>

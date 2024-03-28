@@ -16,7 +16,7 @@ const Contact = () => {
         <p className='text-subtitle mb-8 leading-7'>Contact me for more information and get notified when I publish something new </p>
       </hgroup>
       <div className="flex my-0">
-        <form action="" className='flex flex-col w-[85%] justify-center border border-red-500'>
+        <form action="" className='flex flex-col w-[85%] justify-center'>
           <div className='flex flex-col sm:flex-row sm:items-center'>
             <label htmlFor="email" className='text-subtitle'>Email Address:</label>
             <input type="email" required placeholder='Email Address' id='email' className='bg-[rgba(63,63,70,0.15)] border border-randomColor w-full mt-4 sm:mt-0 sm:w-64 sm:ml-4 py-2 px-4 rounded-md focus:border-[rgb(45,212,191)] hover:border-[rgb(45,212,191)] transition-all duration-300 outline-none text-lg' />
@@ -29,8 +29,8 @@ const Contact = () => {
 
           <button type="submit" className='w-2/5 sm:w-64 py-3 px-8 text-base bg-[rgba(36,37,46,1)] mt-7 rounded-md border border-randomColor hover:scale-95 self-center sm:self-start'>Submit</button>
         </form>
-        <div className='hidden md:block border-red-600'>
-          <Lottie animationData={contactAnimation} style={{ height: 500 }} loop={true} />
+        <div className='hidden lg:block border-red-600'>
+          <Lottie animationData={contactAnimation} style={{ height: 355 }} loop={true} className=''/>
         </div>
       </div>
     </section>
