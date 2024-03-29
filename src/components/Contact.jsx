@@ -1,7 +1,8 @@
 import React from 'react'
 import { FaEnvelope } from 'react-icons/fa'
 import Lottie from 'lottie-react'
-import contactAnimation from '../../public/animation/Animation - 1711496797677.json'
+import contactAnimation from '../../public/animation/contactAnimation.json'
+import doneAnimation from '../../public/animation/doneAnimation.json'
 import { useForm, ValidationError } from '@formspree/react'
 
 const Contact = () => {
@@ -33,7 +34,7 @@ const Contact = () => {
           </div>
 
           <button type="submit" disabled={state.submitting} className='w-2/5 sm:w-64 py-3 px-8 text-base bg-[rgba(36,37,46,1)] mt-7 rounded-md border border-randomColor hover:scale-95 self-center sm:self-start disabled:opacity-40 disabled:cursor-not-allowed'>{state.submitting ? "Submitting...." : "Submit"}</button>
-          {state.succeeded && (<h1>Your message has been submitted successfully &#x1F44C;</h1>)}
+          {state.succeeded && (<h1 className='flex items-center text-xl mt-6'><Lottie style={{height: 40}} animationData={doneAnimation}/>Your message has been submitted successfully &#x1F44C;</h1>)}
         </form>
         <div className='hidden lg:block border-red-600'>
           <Lottie animationData={contactAnimation} style={{ height: 355 }} loop={true} className='' />
