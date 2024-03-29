@@ -6,9 +6,7 @@ import { useForm, ValidationError } from '@formspree/react'
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xzbnjgrn")
-  if (state.succeeded) {
-    return <p>Thank you for reaching out</p>
-  }
+
   return (
     <section>
       <hgroup>
@@ -24,7 +22,7 @@ const Contact = () => {
         <form action="" onSubmit={handleSubmit} className='flex flex-col w-[85%] justify-center'>
           <div className='flex flex-col sm:flex-row sm:items-center'>
             <label htmlFor="email" className='text-subtitle'>Email Address:</label>
-            <input type="email" required placeholder='Email Address' name='email' id='email' className='bg-[rgba(63,63,70,0.15)] border border-randomColor w-full mt-4 sm:mt-0 sm:w-64 sm:ml-4 py-2 px-4 rounded-md focus:border-[rgb(45,212,191)] hover:border-[rgb(45,212,191)] transition-all duration-300 outline-none text-lg' />
+            <input type="email" autoComplete='off' required placeholder='Email Address' name='email' id='email' className='bg-[rgba(63,63,70,0.15)] border border-randomColor w-full mt-4 sm:mt-0 sm:w-64 sm:ml-4 py-2 px-4 rounded-md focus:border-[rgb(45,212,191)] hover:border-[rgb(45,212,191)] transition-all duration-300 outline-none text-lg' />
             <ValidationError prefix='Email' field='email' errors={state.errors}/>
           </div>
 
@@ -34,8 +32,8 @@ const Contact = () => {
             <ValidationError prefix='Message' field='message' errors={state.errors} />
           </div>
 
-          <button type="submit" disabled={state.submitting} className='w-2/5 sm:w-64 py-3 px-8 text-base bg-[rgba(36,37,46,1)] mt-7 rounded-md border border-randomColor hover:scale-95 self-center sm:self-start'>{state.submitting ? "Submitting...." : "Submit"}</button>
-          {state.succeeded && (<p>Your message has been submitted successfully</p>)}
+          <button type="submit" disabled={state.submitting} className='w-2/5 sm:w-64 py-3 px-8 text-base bg-[rgba(36,37,46,1)] mt-7 rounded-md border border-randomColor hover:scale-95 self-center sm:self-start disabled:opacity-40 disabled:cursor-not-allowed'>{state.submitting ? "Submitting...." : "Submit"}</button>
+          {state.succeeded && (<h1>Your message has been submitted successfully &#x1F44C;</h1>)}
         </form>
         <div className='hidden lg:block border-red-600'>
           <Lottie animationData={contactAnimation} style={{ height: 355 }} loop={true} className='' />
