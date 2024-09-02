@@ -19,6 +19,26 @@ export const myProjects = [
     projectShowcase: "",
     category: ["mern"]
   },
+  {
+    id: "12938297",
+    projectTitle: "Multi-Vendor Store",
+    projectDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repellendus inventore iure tempore veniam minus fugit.",
+    imgPath: "",
+    projectDemo: "https://multivendorstore-salawu.netlify.app/",
+    githubRepo: "",
+    projectShowcase: "",
+    category: ["mern"]
+  },
+  {
+    id: "238948",
+    projectTitle: "Chowdey",
+    projectDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repellendus inventore iure tempore veniam minus fugit.",
+    imgPath: "",
+    projectDemo: "https://chowdey.netlify.app/",
+    githubRepo: "",
+    projectShowcase: "",
+    category: ["mern"]
+  },
 
 
 
