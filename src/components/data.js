@@ -8,6 +8,20 @@ The projects stored in this database are categorized into four broad categories 
 */
 
 export const myProjects = [
+  // MERN STACK PROJECTS 
+  {
+    id: "923649828402403",
+    projectTitle: "Mern LoginApp",
+    projectDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repellendus inventore iure tempore veniam minus fugit.",
+    imgPath: "",
+    projectDemo: "https://mernloginapp-salawu.netlify.app/",
+    githubRepo: "",
+    projectShowcase: "",
+    category: ["mern"]
+  },
+
+
+
   // REACT JS PROJECTS
   {
     id: "154",
@@ -17,7 +31,7 @@ export const myProjects = [
     projectDemo: "https://vernchain.netlify.app/",
     githubRepo: "",
     projectShowcase: "",
-    category: ["react+tailwind"]
+    category: ["react"]
   },
   {
     id: "2654",
@@ -27,7 +41,7 @@ export const myProjects = [
     projectDemo: "https://besteats-ahmed.netlify.app",
     githubRepo: "",
     projectShowcase: "",
-    category: ["react+tailwind"]
+    category: ["react"]
   },
   {
     id: "64866",
@@ -37,7 +51,7 @@ export const myProjects = [
     projectDemo: "https://nextcent-as.netlify.app",
     githubRepo: "",
     projectShowcase: "",
-    category: ["react+tailwind"]
+    category: ["react"]
   },
   {
     id: "628764839",
@@ -55,6 +69,16 @@ export const myProjects = [
     projectDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repellendus inventore iure tempore veniam minus fugit.",
     imgPath: "",
     projectDemo: "https://budgettracker-salawu.netlify.app/",
+    githubRepo: "",
+    projectShowcase: "",
+    category: ["react"],
+  },
+  {
+    id: "7286392",
+    projectTitle: "Simple Redux Store",
+    projectDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repellendus inventore iure tempore veniam minus fugit.",
+    imgPath: "",
+    projectDemo: "https://simplestore-salawu.netlify.app/",
     githubRepo: "",
     projectShowcase: "",
     category: ["react"],
@@ -96,6 +120,26 @@ export const myProjects = [
     category: ["html&css"]
   },
   {
+    id: "9264782537",
+    projectTitle: "Saas Pricing Page",
+    projectDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repellendus inventore iure tempore veniam minus fugit.",
+    imgPath: "",
+    projectDemo: "https://saaspricingpage.netlify.app/",
+    githubRepo: "",
+    projectShowcase: "",
+    category: ["html&css"],
+  },
+  {
+    id: "52763276",
+    projectTitle: "Coffee Website",
+    projectDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repellendus inventore iure tempore veniam minus fugit.",
+    imgPath: "",
+    projectDemo: "https://coffeewebsite-salaw.netlify.app/",
+    githubRepo: "",
+    projectShowcase: "",
+    category: ["html&css"],
+  },
+  {
     id: "9845737",
     projectTitle: "Password Strength Checker",
     projectDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repellendus inventore iure tempore veniam minus fugit.",
@@ -121,26 +165,6 @@ export const myProjects = [
     projectDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repellendus inventore iure tempore veniam minus fugit.",
     imgPath: "",
     projectDemo: "https://customdropmenu-salawu.netlify.app/",
-    githubRepo: "",
-    projectShowcase: "",
-    category: ["html&css"],
-  },
-  {
-    id: "9264782537",
-    projectTitle: "Saas Pricing Page",
-    projectDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repellendus inventore iure tempore veniam minus fugit.",
-    imgPath: "",
-    projectDemo: "https://saaspricingpage.netlify.app/",
-    githubRepo: "",
-    projectShowcase: "",
-    category: ["html&css"],
-  },
-  {
-    id: "52763276",
-    projectTitle: "Coffee Website",
-    projectDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repellendus inventore iure tempore veniam minus fugit.",
-    imgPath: "",
-    projectDemo: "https://coffeewebsite-salaw.netlify.app/",
     githubRepo: "",
     projectShowcase: "",
     category: ["html&css"],
