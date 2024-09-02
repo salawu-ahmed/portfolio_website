@@ -39,6 +39,16 @@ export const myProjects = [
     projectShowcase: "",
     category: ["mern"]
   },
+  {
+    id: "32537823",
+    projectTitle: "Dojo Blog",
+    projectDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repellendus inventore iure tempore veniam minus fugit.",
+    imgPath: "",
+    projectDemo: "https://dojoblog-salawu.netlify.app/",
+    githubRepo: "",
+    projectShowcase: "",
+    category: ["mern"]
+  },
 
 
 

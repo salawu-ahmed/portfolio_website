@@ -27,7 +27,7 @@ const Projects = () => {
   return (
     <main className='flex flex-col gap-8 sm:flex-row items-start'>
       <section className='flex sm:flex-col gap-3 flex-wrap justify-center'>
-        <button className="w-32 sm:w-44 py-2 sm:py-3 text-center text-sm sm:text-base bg-btnBg border border-transparent focus:border-custom-blue opacity-50 focus:opacity-100 focus:font-bold focus:leading-2 hover:opacity-100 transition-all duration-300" onClick={() => setProjects(myProjects)}>All Projects</button>
+        {/* <button className="w-32 sm:w-44 py-2 sm:py-3 text-center text-sm sm:text-base bg-btnBg border border-transparent focus:border-custom-blue opacity-50 focus:opacity-100 focus:font-bold focus:leading-2 hover:opacity-100 transition-all duration-300" onClick={() => setProjects(myProjects)}>All Projects</button> */}
         <button className='w-32 sm:w-44 py-2 sm:py-3 text-center text-sm sm:text-base bg-[rgba(36,37,46,1)] border border-transparent focus:border-custom-blue opacity-50 focus:opacity-100 focus:font-bold focus:leading-2 hover:opacity-100 transition-all duration-300' onClick={() => handleFilter("html&css")}>HTML & CSS</button>
         <button className='w-32 sm:w-44 py-2 sm:py-3 text-center text-sm sm:text-base bg-[rgba(36,37,46,1)] border border-transparent focus:border-custom-blue opacity-50 focus:opacity-100 focus:font-bold focus:leading-2 hover:opacity-100 transition-all duration-300' onClick={() => handleFilter("javascript")}>JavaScript Projects</button>
         <button className='w-32 sm:w-44 py-2 sm:py-3 text-center text-sm sm:text-base bg-[rgba(36,37,46,1)] border border-transparent focus:border-custom-blue opacity-50 focus:opacity-100 focus:font-bold focus:leading-2 hover:opacity-100 transition-all duration-300' onClick={() => handleFilter("react")}>React Projects</button>
@@ -38,7 +38,7 @@ const Projects = () => {
           {
             projects.map(item => {
               return (
-                <motion.article layout initial={{transform: "scale(0"}} animate={{transform: "scale(1"}} transition={{type: "spring", damping: 8, stiffness: 50}} key={item.id} className='border border-card-border/30 hover:border-custom-blue transition-all duration-300 w-64  rounded-l hover:rotate-1 hover:cursor-pointer hover:scale-105'>
+                <motion.article layout initial={{transform: "scale(0"}} animate={{transform: "scale(1"}} transition={{type: "spring", damping: 8, stiffness: 50}} key={item.id} className='border border-card-border/30 hover:border-custom-blue transition-all duration-300 w-56  rounded-l hover:rotate-1 hover:cursor-pointer hover:scale-105'>
                   <img src="/1.jpg" alt="" className='rounded-l' />
                   <div className='py-4 px-2'>
                     <h1 className='text-title'>{item.projectTitle}</h1>
